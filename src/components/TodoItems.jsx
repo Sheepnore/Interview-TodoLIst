@@ -37,9 +37,8 @@ function TodoItems() {
             onClick={() => {
               handleDeleteBtnClick(index);
             }}
-          >
-            X
-          </button>
+            className="deleteBtn"
+          ></button>
         </div>
       ))}
     </div>
