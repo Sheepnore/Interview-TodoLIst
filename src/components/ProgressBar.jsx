@@ -10,8 +10,13 @@ function ProgressBar() {
 
   return (
     <div className="ProgressBar">
-      <div className="text">{`${percentage}%`}</div>
-      <div className="bar"></div>
+      <label className="text" htmlFor="todoProgress">{`${percentage}%`}</label>
+      <progress
+        className="bar"
+        id="todoProgress"
+        max="100"
+        value={percentage}
+      ></progress>
     </div>
   );
 }
