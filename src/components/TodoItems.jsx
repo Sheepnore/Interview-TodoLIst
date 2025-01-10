@@ -15,7 +15,13 @@ function TodoItems() {
       });
     });
   }
-  console.log(todoList);
+
+  function handleDeleteBtnClick(index) {
+    setTodoList((prevList) => {
+      return prevList.filter((item, i) => i !== index);
+    });
+  }
+
   return (
     <div className="TodoItems">
       {todoList.map((item, index) => (
@@ -27,7 +33,13 @@ function TodoItems() {
             onChange={() => handleCheckboxClick(index)}
           />
           <p className={item.done ? "done" : "notDone"}>{item.thing}</p>
-          <button>X</button>
+          <button
+            onClick={() => {
+              handleDeleteBtnClick(index);
+            }}
+          >
+            X
+          </button>
         </div>
       ))}
     </div>
