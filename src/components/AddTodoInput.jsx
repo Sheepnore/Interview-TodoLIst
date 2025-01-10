@@ -1,13 +1,31 @@
+import { useState } from "react";
 import "../styles/AddTodoInput.css";
+import { useTodoContext } from "./TodoContext";
 
-function AddTodoInput({ handleAddToList }) {
-  function handleInputChange(e) {}
+function AddTodoInput() {
+  const { todoList, setTodoList } = useTodoContext();
+
+  const [userInput, setUserInput] = useState("");
+
+  function handleInputChange(e) {
+    setUserInput(() => e.target.value);
+  }
+
+  function handleAddBtnClick() {
+    setTodoList([...todoList, { thing: userInput, done: false }]);
+    setUserInput("");
+  }
 
   return (
     <div className="AddTodoInput">
-      <p>Add to list</p>
-      <input type="text" className="userInput" onChange={handleInputChange} />
-      <button className="addToListBtn" onClick={handleAddToList}>
+      <div className="input-text">Add to list</div>
+      <input
+        type="text"
+        className="userInput"
+        onChange={handleInputChange}
+        value={userInput}
+      />
+      <button className="addToListBtn" onClick={handleAddBtnClick}>
         +
       </button>
     </div>

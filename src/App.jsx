@@ -4,15 +4,18 @@ import ProgressBar from "./components/ProgressBar";
 import TodoItems from "./components/TodoItems";
 import SortToggle from "./components/SortToggle";
 import AddTodoInput from "./components/AddTodoInput";
+import { TodoContextProvider } from "./components/TodoContext";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <ProgressBar></ProgressBar>
-      <TodoItems></TodoItems>
-      <SortToggle></SortToggle>
-      <AddTodoInput></AddTodoInput>
+      <TodoContextProvider>
+        <Header></Header>
+        <ProgressBar></ProgressBar>
+        <TodoItems></TodoItems>
+        <SortToggle></SortToggle>
+        <AddTodoInput></AddTodoInput>
+      </TodoContextProvider>
     </div>
   );
 }

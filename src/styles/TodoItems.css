@@ -1,0 +1,11 @@
+.TodoItems .item{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+}
+.item p.done{
+  text-decoration:line-through
+}
+.item p.notDone{
+  text-decoration: none;
+}
