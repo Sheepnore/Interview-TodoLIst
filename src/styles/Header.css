@@ -1,0 +1,16 @@
+.Header{
+  padding: .8rem 0;
+  margin: .5rem 0;
+  border-bottom: 2px solid var(--header-font-color);
+}
+
+.Header h1{
+  color: var(--header-font-color);
+  font-size: 1.5rem;
+  padding: 0;
+}
+.Header p{
+  font-size: .8rem;
+  padding: 0;
+  color: gray;
+}
