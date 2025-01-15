@@ -1,6 +1,5 @@
 :root{
   --header-font-color: rgb(78, 115, 147);
-
 }
 
 #root{
@@ -21,7 +20,7 @@ h1{
 .App{
   max-width: 500px;
   display: grid;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: rgb(128,229,240);
   background: linear-gradient(180deg, rgba(128, 229, 240, 0.4) 0%, rgba(247,224,255,1) 100%);
   row-gap: 1rem;
