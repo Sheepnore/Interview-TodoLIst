@@ -5,10 +5,10 @@ const todoContext = createContext();
 // 建立TodoList的context
 export function TodoContextProvider({ children }) {
   const [todoList, setTodoList] = useState([
-    { thing: "Learn React", done: false, order: 1 },
-    { thing: "Learn Golang", done: false, order: 2 },
-    { thing: "Learn Docker", done: false, order: 3 },
-    { thing: "Learn something else", done: false, order: 4 },
+    { thing: "Learn React", done: false },
+    { thing: "Learn Golang", done: false },
+    { thing: "Learn Docker", done: false },
+    { thing: "Learn something else", done: false },
   ]);
 
   return (
