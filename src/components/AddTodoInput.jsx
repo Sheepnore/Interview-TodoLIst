@@ -14,7 +14,10 @@ function AddTodoInput() {
   }
   // 使用者按下新增按鈕，把它加入到Todo List 裏面
   function handleAddBtnClick() {
-    setTodoList([...todoList, { thing: userInput, done: false }]);
+    setTodoList([
+      ...todoList,
+      { thing: userInput, done: false, order: todoList.length + 1 },
+    ]);
     setUserInput("");
   }
 
