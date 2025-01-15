@@ -1,0 +1,24 @@
+.AddTodoInput{
+  display: grid;
+  row-gap: .3rem;
+}
+
+.AddTodoInput .input-container{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 40px;
+  column-gap: 5px;
+}
+.AddTodoInput .input-text{
+  color: var(--header-font-color);
+}
+
+.input-container .userInput{
+  border: none;
+  border-radius: 4px;
+}
+.input-container .addToListBtn{
+  border: none;
+  border-radius: 4px;
+  background-color: var(--header-font-color);
+}
