@@ -1,0 +1,8 @@
+.SortToggle{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.SortToggle p{
+  color: rgb(89, 89, 89);
+}

@@ -1,4 +1,5 @@
 import { Switch } from "@mui/material";
+import "../styles/SortToggle.css";
 
 function SortToggle() {
   return (
