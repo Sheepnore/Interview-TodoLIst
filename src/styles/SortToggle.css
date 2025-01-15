@@ -2,6 +2,8 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  border-top: 2px solid var(--header-font-color);
+  padding: 1rem 0;
 }
 .SortToggle p{
   color: var(--header-font-color);

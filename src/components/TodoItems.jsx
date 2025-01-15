@@ -5,6 +5,7 @@ import { useTodoContext } from "./TodoContext";
 function TodoItems() {
   const { todoList, setTodoList } = useTodoContext();
 
+  // 使用者勾選時，取得最新的todoList並改變todo狀態
   function handleCheckboxClick(index) {
     setTodoList((prevList) => {
       return prevList.map((item, i) => {
@@ -15,7 +16,7 @@ function TodoItems() {
       });
     });
   }
-
+  // 使用者刪除時，把該todo從todoList移除
   function handleDeleteBtnClick(index) {
     setTodoList((prevList) => {
       return prevList.filter((item, i) => i !== index);

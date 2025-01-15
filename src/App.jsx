@@ -6,6 +6,7 @@ import SortToggle from "./components/SortToggle";
 import AddTodoInput from "./components/AddTodoInput";
 import { TodoContextProvider } from "./components/TodoContext";
 
+// 將TodoContext 分享到每個component
 function App() {
   return (
     <div className="App">
